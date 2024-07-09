@@ -1,6 +1,6 @@
-# SynergyTech Website
+# SynergyTech Innovations
 
-This repository contains a website for SynergyTech, showcasing their services and providing information about the company.
+This repository contains a website for SynergyTech Innovations, showcasing their services and providing information about the company.
 
 ## Languages and Frameworks Used
 - HTML
@@ -8,7 +8,7 @@ This repository contains a website for SynergyTech, showcasing their services an
 - JavaScript (with Bootstrap)
 
 ## What This Website Does
-The SynergyTech website serves as an online platform to introduce visitors to the company's services and expertise in technology solutions. It includes sections for:
+The SynergyTech Innovations serves as an online platform to introduce visitors to the company's services and expertise in technology solutions. It includes sections for:
 - Home: Introduction to SynergyTech and their mission.
 - Services: Details about the services offered, including software development, IT consulting, and technical support.
 - Contact: A form to allow visitors to get in touch with SynergyTech for inquiries.
