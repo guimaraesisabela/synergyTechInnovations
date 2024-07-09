@@ -5,7 +5,7 @@ This repository contains a website for SynergyTech Innovations, showcasing their
 ## Languages and frameworks used
 - HTML
 - CSS (with Bootstrap)
-- JavaScript (with Bootstrap)
+- JavaScript 
 
 ## What this website does
 The SynergyTech Innovations serves as an online platform to introduce visitors to the company's services and expertise in technology solutions. It includes sections for:
