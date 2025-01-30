@@ -1,2 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body {
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.hero {
+    /* padding: 100px 0; */
+    text-align: center;
+    transition: background-color 0.5s;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+}
+.services, .about, .blog {
+    padding: 50px 0;
+}
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+    margin-top: auto;
+}
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+/* .dark-mode .hero {
+    background-color: #333;
+} */
+.dark-mode .footer {
+    background-color: #000;
+}
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.hero, .footer, .services, .about {
+transition: background-color 0.5s, color 0.5s;
+}

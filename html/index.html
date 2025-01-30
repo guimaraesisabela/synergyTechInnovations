@@ -1,77 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | SynergyTech</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            transition: background-color 0.5s, color 0.5s;
-        }
-        .hero {
-            background-color: #f8f9fa;
-            padding: 100px 0;
-            text-align: center;
-            transition: background-color 0.5s;
-        }
-        .hero h1 {
-            font-size: 3rem;
-        }
-        .services, .about, .blog {
-            padding: 50px 0;
-        }
-        .footer {
-            background-color: #343a40;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            transition: background-color 0.5s, color 0.5s;
-        }
-        .dark-mode {
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        .dark-mode .hero {
-            background-color: #333;
-        }
-        .dark-mode .footer {
-            background-color: #000;
-        }
-        .toggle-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-        }
+       
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="home.html">SynergyTech</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ourProducts.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contactUs.html">Contact us</a>
-                </li>
-            </ul>
-            <button class="btn btn-secondary toggle-button" onclick="toggleDarkMode()">Dark Mode</button>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <div class="container d-flex justify-content-between w-100">
+            <a class="navbar-brand" href="index.html">SynergyTech</a>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <button id="darkModeToggle" class="btn btn-secondary ms-2">Dark Mode</button>
         </div>
     </nav>
-
+    
+    
+    <!-- CONTENT -->
     <section class="hero">
-        <div class="container">
-            <h1>Welcome to SynergyTech</h1>
-            <p>Transforming your ideas into reality with innovative technology solutions.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
+        <div class="container text-center">
+            <h1 class="display-4" style="margin-top: 20px;">SynergyTech Innovations</h1>
+            <p class="lead">Transforming your ideas into reality with innovative technology solutions.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Learn more          
+            </button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -85,8 +68,8 @@
     <section class="services">
         <div class="container">
             <h2>Our Services</h2>
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row  text-center">
+                <div class="col-sm-12 col-md-4">
                     <h3>Software Development</h3>
                     <p>Custom applications to meet the specific needs of your business.</p>
                 </div>
@@ -101,9 +84,8 @@
             </div>
         </div>
     </section>
-
-
-// add js later
+            
+<!-- // add js later -->
     <!-- <section class="blog">
         <div class="container">
             <h2>Latest News</h2>
@@ -124,18 +106,20 @@
         </div>
     </section> -->
 
-    <section class="footer">
-        <div class="container">
+    <!-- FOOTER -->
+    <section class="footer bg-dark text-white text-center p-3">
+        <div class="container-fluid">
             <p>&copy; 2024 SynergyTech. All rights reserved.</p>
         </div>
     </section>
 
-    <button class="btn btn-secondary toggle-button" onclick="toggleDarkMode()"> Dark Mode</button>
+    <!-- <button class="btn btn-secondary toggle-button" onclick="toggleDarkMode()"> Dark Mode</button> -->
 
     <script>
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
         }
+        document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

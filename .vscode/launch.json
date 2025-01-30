@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.openBrowser": true,
+    "liveServer.settings.root": "/html"
+}
