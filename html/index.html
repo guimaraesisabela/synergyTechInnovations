@@ -6,25 +6,29 @@
     <title>Home | SynergyTech</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-       
-    </style>
+    <script src="script.js"></script>
+
 </head>
 <body>
     <!-- HEADER -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-        <div class="container d-flex justify-content-between w-100">
-            <a class="navbar-brand" href="index.html">SynergyTech</a>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
-                </ul>
-            </div>
-    
-            <button id="darkModeToggle" class="btn btn-secondary ms-2">Dark Mode</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 65px;">
+        <a class="navbar-brand" href="index.html">SynergyTech</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">Contact us</a>
+                </li>
+            </ul>
+            <button class="btn btn-secondary toggle-button" onclick="toggleDarkMode()">Dark Mode</button>
         </div>
     </nav>
     
@@ -34,27 +38,32 @@
         <div class="container text-center">
             <h1 class="display-4" style="margin-top: 20px;">SynergyTech Innovations</h1>
             <p class="lead">Transforming your ideas into reality with innovative technology solutions.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Learn more          
-            </button>
         </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-            </div>
+
+    <button type="button" class="btn btn-primary" id="learnMoreBtn">
+        Learn More
+    </button>
+  
+    <!-- fix this modal after -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Informações Importantes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <p>Aqui está a informação que você queria aprender! Este é um exemplo simples de conteúdo que pode ser exibido.</p>
+          <p>O Bootstrap facilita a criação de modais interativos e responsivos para exibir informações adicionais de forma clara e profissional.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar alterações</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
         </div>
     </section>
 

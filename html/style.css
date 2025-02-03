@@ -76,4 +76,25 @@ body {
 .navbar-toggler-icon {
     background-color: #fff; 
 }
+
+ .main-content {
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+h1 {
+    margin-top: 20px; 
+}
+
+.subtitle h5{
+    margin-top: 0;
+    max-width: 800px; 
+    width: 100%; 
+    margin: 20px 0; 
+}
+
+
     
